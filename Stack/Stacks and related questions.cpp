@@ -7,12 +7,35 @@ using namespace std;
 int main(){
     OJ;
     FIO;
-    // int n;
-    // cin>>n;
-    // vector<int>a(n);
-    // for(int i=0;i<n;i++){
-    //     cin>>a[i];
-    // }
+    /*
+    Trapping rainwater
+    int n;
+    cin>>n;
+    vector<int>a(n);
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    vector<int>mr(n,0);
+    vector<int>ml(n,0);
+    vector<int>water(n,0);
+    ml[0]=a[0];
+    mr[n-1]=a[n-1];
+    for(int i=1;i<n;i++){
+        ml[i]=max(ml[i-1],a[i]);
+    }
+    for(int i=n-2;i>=0;i--){
+        mr[i]=max(mr[i+1],a[i]);
+    }
+    for(int i=0;i<n;i++){
+        water[i]=min(mr[i],ml[i])-a[i];
+    }
+    int sum=0;
+    for(auto x:water){
+        sum+=x;
+    }
+    cout<<sum<<" ";
+    */
+
     /*
     previous greater element
     for(int i=0;i<n;i++){ 
